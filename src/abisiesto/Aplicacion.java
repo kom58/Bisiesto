@@ -30,7 +30,6 @@ public class Aplicacion {
             public void actionPerformed(ActionEvent e) {
 
                 version1();
-
             }
         });
 
@@ -38,7 +37,6 @@ public class Aplicacion {
             public void actionPerformed(ActionEvent e) {
 
                 version2();
-
             }
         });
         btnSalir.addActionListener(new ActionListener() {
@@ -47,9 +45,17 @@ public class Aplicacion {
                 System.exit(0);
             }
         });
+        datAno.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                version1();
+            }
+        });
     }
 
     public void version1() {
+
 
         String anoPuesto = datAno.getText();                // Lee el año puesto
         int a = Integer.parseInt(anoPuesto);                // Lo convierte en int
