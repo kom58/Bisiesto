@@ -1,8 +1,6 @@
 package abisiesto;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Aplicacion {
 
@@ -26,32 +24,10 @@ public class Aplicacion {
 
     public Aplicacion() {
 
-        btnVers1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                version1();
-            }
-        });
-
-        btnVers2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                version2();
-            }
-        });
-        btnSalir.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                System.exit(0);
-            }
-        });
-        datAno.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                version1();
-            }
-        });
+        btnVers1.addActionListener(e -> version1());
+        btnVers2.addActionListener(e -> version2());
+        btnSalir.addActionListener(e -> System.exit(0));
+        datAno.addActionListener(e -> version1());
     }
 
     public void version1() {
