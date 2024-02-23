@@ -5,22 +5,11 @@ import javax.swing.*;
 public class Aplicacion {
 
     private JPanel panBase;
-    private JPanel panSuperior;
-    private JPanel panMedio;
-    private JPanel panInferior;
-    private JPanel panRespuestas;
     private JButton btnVers1;
     private JButton btnVers2;
-    private JLabel txtTitulo;
     private JLabel txtRespuesta;
-    private JPanel panSalir;
     private JButton btnSalir;
     private JTextField datAno;
-    private JPanel panSeparador1;
-    private JPanel panSeparador2;
-
-    public boolean bisiesto = false;
-
 
     public Aplicacion() {
 
@@ -57,7 +46,6 @@ public class Aplicacion {
 
     }
 
-
     public void version2() {
 
         String anoPuesto = datAno.getText();                // Lee el año puesto
@@ -83,7 +71,6 @@ public class Aplicacion {
         }
 
     }
-
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Años bisiestos");
